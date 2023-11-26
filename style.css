@@ -52,11 +52,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 #header {
-    background-color: #3498db !important; /* Cor azul de exemplo */
+    background-color: #0766AD !important; /* Cor azul de exemplo */
   }
 
 .navbar-white {
-    background-color: #93caee !important; /* Cor azul de exemplo */
+    background-color: #0766AD !important; /* Cor azul de exemplo */
 }
 
 /* Adicione a cor branca ao texto da barra de navegação para contrastar */
@@ -88,4 +88,8 @@ p{
 
 #valores{
     font-size: 18px;
+}
+
+.accordion-button-bronze{
+    background-color: #CD7F32;
 }
