@@ -1,15 +1,15 @@
 body::-webkit-scrollbar {
-    width: 0.8rem;
+    width: 0.9rem;
 }
 
 body::-webkit-scrollbar-track {
-    background: rgb(179, 179, 179);
+    background: rgb(236, 236, 236);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(88, 88, 88);
+    background-color: rgb(170, 170, 170);
     border-radius: 20px;
-    border: 3px solid rgb(88, 88, 88);
+    border: 3px solid rgb(170, 170, 170);
 }
 
 /* Estilo da navegação */
@@ -46,7 +46,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 #header{
-
     font-size: 15px;
     font-weight: bold;
 }
@@ -61,7 +60,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Adicione a cor branca ao texto da barra de navegação para contrastar */
 .navbar-nav .nav-link {
-    color: #000000 !important;
+    color: #fff !important;
 }
 
 #header .navbar-brand{
@@ -69,7 +68,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 #home{
-    padding-top: 8%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 body{
@@ -86,8 +86,21 @@ p{
 
 }
 
-#valores{
+#sobre{
+    background-color: #C5E898;
     font-size: 18px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#servicos{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#quemsomos{
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .accordion-button-bronze{
