@@ -89,6 +89,11 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 3%;
 }
 
+.separador {
+    border-top: 2px solid #8f8f8f;
+    margin: 20px 0; /* Ajuste o espaçamento conforme necessário */
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
