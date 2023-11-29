@@ -76,6 +76,16 @@ body::-webkit-scrollbar-thumb {
     text-shadow: 1px 1px 2px #000000;
     text-decoration: underline;
 }
+
+/* Toogler */
+#toggler {
+    display: none; /* Inicialmente, o menu está oculto */
+}
+
+#iconeFechar {
+    display: none; /* Inicialmente, o ícone "X" está oculto */
+}
+
 .home {
     background: url(../document/céu-azul.jpg);
     height: 100vh;
