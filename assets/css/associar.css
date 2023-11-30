@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.tab-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tab-header {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.tab-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: #8FBC8F;
+    color: #333;
+    border-bottom: 2px solid #333;
+}
+
+.tab-content {
+    padding: 20px;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="file"],
+.form-row input[type="date"],
+.form-row select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-row input[type="text"]:focus,
+.form-row input[type="file"]:focus,
+.form-row input[type="date"]:focus,
+.form-row select:focus {
+    border-color: #333;
+}
+
+.button-container {
+    text-align: right;
+    margin-top: 20px;
+    border-radius: 10%;
+}
+
+.button-container .cancel-button,
+.button-container input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4aa14a;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.button-container .cancel-button:hover,
+.button-container input[type="submit"]:hover {
+    background-color: #777;
+}
+
+.subtable-container {
+    margin-top: 20px;
+}
+
+.subtable-header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.subtable-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.subtable-row input[type="text"],
+.subtable-row input[type="date"],
+.subtable-row select {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.subtable-row input[type="text"]:focus,
+.subtable-row input[type="date"]:focus,
+.subtable-row select:focus {
+    border-color: #333;
+}
+
+.subtable-row button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    .subtable-row input[type="text"],
+    .subtable-row input[type="date"],
+    .subtable-row select {
+        flex: 1;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+}

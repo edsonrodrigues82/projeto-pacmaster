@@ -81,7 +81,7 @@ body::-webkit-scrollbar-thumb {
 
 
 .home {
-    background: url(../document/céu-azul.jpg);
+    background: url(../img/céu-azul.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -116,12 +116,12 @@ p{
     background-color: #C5E898;
     font-size: 18px;
     padding-top: 3%;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
 }
 
 #servicos{
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 @keyframes fadeIn {
@@ -156,8 +156,8 @@ p{
 }
 
 #quemsomos{
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 6%;
+    padding-bottom: 4%;
 }
 
 .accordion-button-bronze{
@@ -180,6 +180,7 @@ p{
 }
 
 #planos{
+    padding-top: 6%;
     padding-bottom: 4%;
 }
 
