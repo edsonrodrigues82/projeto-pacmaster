@@ -78,13 +78,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Toogler */
-#toggler {
-    display: none; /* Inicialmente, o menu está oculto */
-}
 
-#iconeFechar {
-    display: none; /* Inicialmente, o ícone "X" está oculto */
-}
 
 .home {
     background: url(../document/céu-azul.jpg);
