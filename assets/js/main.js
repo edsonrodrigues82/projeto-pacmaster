@@ -6,7 +6,7 @@ function getCurrentDate() {
     return day + '/' + month + '/' + year;
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var currentDate = getCurrentDate();
     var dataCadastroInput = document.getElementById("data_cadastro");
     dataCadastroInput.value = currentDate;
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function updateValueField() {
     // Obtém o elemento de seleção
     var planoSelect = document.getElementById("plano");
-    
+
     // Obtém o valor selecionado
     var selectedValue = planoSelect.value;
 
@@ -57,11 +57,64 @@ const express = require('express');
 const app = express();
 
 app.get('/assets/html/Projeto/projeto-pacmaster/index.html', (req, res) => {
-  res.redirect('/index.html');
+    res.redirect('/index.html');
 });
 
 // Restante da configuração do servidor...
 
+
+function addDependent() {
+    // Criar elemento div para representar um dependente
+    var dependentDiv = document.createElement("div");
+    dependentDiv.className = "subtable-row";
+
+    // Adicionar campos para Parentesco
+    var parentescoInput = createInput("text", "Parentesco");
+    dependentDiv.appendChild(parentescoInput);
+
+    // Adicionar campos para Nome
+    var nomeInput = createInput("text", "Nome");
+    dependentDiv.appendChild(nomeInput);
+
+    // Adicionar campos para Data de Nascimento
+    var dataNascimentoInput = createInput("text", "Data de Nascimento");
+    dataMask = IMask(dataNascimentoInput, {
+        mask: '00/00/0000'
+    });
+    dependentDiv.appendChild(dataNascimentoInput);
+
+    // Adicionar campos para CPF
+    var cpfInput = createInput("text", "CPF");
+    cpfMask = IMask(cpfInput, {
+        mask: '000.000.000-00'
+    });
+    dependentDiv.appendChild(cpfInput);
+
+    // Adicionar botão de remoção
+    var removeButton = document.createElement("button");
+    removeButton.innerText = "Remover";
+    removeButton.onclick = function () {
+        removeDependent(dependentDiv);
+    };
+    dependentDiv.appendChild(removeButton);
+
+    // Adicionar o dependente à div principal
+    document.getElementById("subtable-body").appendChild(dependentDiv);
+}
+
+// Função para criar campos de entrada
+function createInput(type, placeholder) {
+    var input = document.createElement("input");
+    input.type = type;
+    input.placeholder = placeholder;
+    input.className = "subtable-input"; // Adicionei uma classe aqui
+    return input;
+}
+
+function removeDependent(dependentDiv) {
+    // Remover o dependente da div principal
+    document.getElementById("subtable-body").removeChild(dependentDiv);
+}
 app.listen(3000, () => {
-  console.log('Servidor rodando na porta 3000');
+    console.log('Servidor rodando na porta 3000');
 });

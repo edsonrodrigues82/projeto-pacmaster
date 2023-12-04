@@ -41,21 +41,23 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
-#logo{
+#logo {
     height: 75px;
 }
 
-#header{
+#header {
     font-size: 15px;
     font-weight: bold;
 }
 
 #header {
-    background-color: #0766AD !important; /* Cor azul de exemplo */
-  }
+    background-color: #0766AD !important;
+    /* Cor azul de exemplo */
+}
 
 .navbar-white {
-    background-color: #0766AD !important; /* Cor azul de exemplo */
+    background-color: #0766AD !important;
+    /* Cor azul de exemplo */
 }
 
 /* Adicione a cor branca ao texto da barra de navegação para contrastar */
@@ -63,7 +65,7 @@ body::-webkit-scrollbar-thumb {
     color: #fff !important;
 }
 
-#header .navbar-brand{
+#header .navbar-brand {
     width: 25px;
 }
 
@@ -88,39 +90,40 @@ body::-webkit-scrollbar-thumb {
     background-repeat: no-repeat;
 }
 
-#home2{
+#home2 {
     padding-top: 6%;
     padding-bottom: 6%;
 }
 
 .separador {
     border-top: 2px solid #8f8f8f;
-    margin: 20px 0; /* Ajuste o espaçamento conforme necessário */
+    margin: 20px 0;
+    /* Ajuste o espaçamento conforme necessário */
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
+h1 {
     font-size: 50px;
     margin-bottom: 30px !important;
 }
 
 
-p{
+p {
     font-size: 18px;
 
 }
 
-#sobre{
+#sobre {
     background-color: #C5E898;
     font-size: 18px;
     padding-top: 3%;
     padding-bottom: 5%;
 }
 
-#servicos{
+#servicos {
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -130,6 +133,7 @@ p{
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -156,43 +160,44 @@ p{
     transform: scale(1.05);
 }
 
-#quemsomos{
+#quemsomos {
     padding-top: 6%;
     padding-bottom: 4%;
 }
 
-.accordion-button-bronze{
+.accordion-button-bronze {
     background-color: #CD7F32;
 }
 
 /* COR BRONZE PARA CARD DE PLANOS */
 .cor-bronze {
-    color: #cd7f32 !important; /* Código hexadecimal para a cor bronze */
+    color: #cd7f32 !important;
+    /* Código hexadecimal para a cor bronze */
 }
 
 .border-cor-bronze {
     border-color: #cd7f32 !important;
 }
 
-.btn-cor-bronze{
-    color:#fff !important;
+.btn-cor-bronze {
+    color: #fff !important;
     background-color: #cd7f32 !important;
-    
+
 }
 
-#planos{
+#planos {
     padding-top: 6%;
     padding-bottom: 4%;
 }
 
-#footer{
+#footer {
     padding-bottom: -1px;
 }
 
-#descricao{
+#descricao {
     font-size: 16px;
 }
 
-#contato{
+#contato {
     align-items: left;
 }
