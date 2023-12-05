@@ -1,3 +1,11 @@
+var limitesDependentes = {
+    "Bronze": 5,
+    "Prata": 8,
+    "Ouro": 10,
+    "Esmeralda": 12,
+    "Diamante": 15
+};
+
 function getCurrentDate() {
     var currentDate = new Date();
     var day = String(currentDate.getDate()).padStart(2, '0');
@@ -64,6 +72,15 @@ app.get('/assets/html/Projeto/projeto-pacmaster/index.html', (req, res) => {
 
 
 function addDependent() {
+    var planoSelect = document.getElementById("plano");
+    var selectedValue = planoSelect.value;
+    var numeroDependentes = document.querySelectorAll('.subtable-row').length;
+
+    if (numeroDependentes >= limitesDependentes[selectedValue]) {
+        alert("Limite de dependentes atingido para o plano selecionado.");
+        return;
+    }
+    
     // Criar elemento div para representar um dependente
     var dependentDiv = document.createElement("div");
     dependentDiv.className = "subtable-row";
