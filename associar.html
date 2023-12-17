@@ -108,12 +108,13 @@
 
                     <div class="form-row">
                         <label for="religiao">Religião:</label>
-                        <select id="religiao" name="religiao" required>
+                        <select id="religiao" name="religiao" onchange="showHideTextBox()" required>
                             <option value="">Selecione...</option>
                             <option value="Católico">Catolico</option>
                             <option value="Evangélico">Evangelico</option>
                             <option value="Outra">Outra</option>
                         </select>
+                        <input type="text" id="outraReligiao" name="outraReligiao" style="display: none;" placeholder="Digite sua religião">
                     </div>
 
                     <div class="subtable-container">
@@ -139,6 +140,7 @@
     </section>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/associar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/imask"></script>
 </body>
 
