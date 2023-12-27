@@ -114,7 +114,8 @@
                             <option value="Evangélico">Evangelico</option>
                             <option value="Outra">Outra</option>
                         </select>
-                        <input type="text" id="outraReligiao" name="outraReligiao" style="display: none;" placeholder="Digite sua religião">
+                        <input type="text" id="outraReligiao" name="outraReligiao" style="display: none;"
+                            placeholder="Digite sua religião">
                     </div>
 
                     <div class="subtable-container">
@@ -126,7 +127,8 @@
                             <!-- Dependentes serão adicionados dinamicamente aqui -->
                         </div>
 
-                        <button class="add-dependent-button" type="button" onclick="addDependent()">Adicionar Dependente</button>
+                        <button class="add-dependent-button" type="button" onclick="addDependent()">Adicionar
+                            Dependente</button>
                     </div>
                 </div>
 
@@ -135,6 +137,11 @@
                         onclick="window.location.href='index.html'">Cancelar</button>
                     <input type="submit" value="Enviar">
                 </div>
+                <div id="overlay"></div>
+                <div id="success-popup">
+                    <p>Enviado com sucesso!</p>
+                </div>
+
             </form>
         </div>
     </section>

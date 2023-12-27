@@ -13,15 +13,21 @@ function showHideTextBox() {
 document.addEventListener('DOMContentLoaded', function () {
     // Função para exibir o popup
     function showSuccessPopup() {
-        alert('Enviado com sucesso');
-        // Redirecionar para a tela inicial (substitua 'index.html' pelo seu caminho correto)
-        window.location.href = 'index.html';
+        // Mostrar o overlay
+        document.getElementById('overlay').style.display = 'block';
+        // Mostrar o popup
+        document.getElementById('success-popup').style.display = 'block';
+        // Redirecionar para a tela inicial após alguns segundos (ajuste conforme necessário)
+        setTimeout(function () {
+            window.location.href = 'index.html';
+        }, 2000);
     }
 
     // Adiciona um ouvinte de evento para o formulário
     document.querySelector('form').addEventListener('submit', function (event) {
         // Impede o envio padrão do formulário
         event.preventDefault();
+
         // Chama a função para exibir o popup de sucesso
         showSuccessPopup();
         // Pode adicionar código adicional aqui para enviar o formulário via AJAX, se necessário
